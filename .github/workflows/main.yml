@@ -28,6 +28,10 @@ jobs:
         node-version: 10.x
     - run: yarn install
     - run: yarn build
-    - run: yarn test
-      env:
-        CI: "true"
+    - run: yarn test --watchAll=false
+    - if: github.ref == 'refs/head/master'
+      uses: JamesIves/github-pages-deploy-action@releases/v3
+      with:
+        BRANCH: gh-pages
+        FOLDER: build
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
