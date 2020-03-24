@@ -1,4 +1,6 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# react-pages ![CI](https://github.com/tillahoffmann/react-pages/workflows/CI/badge.svg)
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) to demonstrate how to deploy a React App to Github Pages, including CI testing and automatic deployment from the `master` branch. See the [GitHub Actions workflow](https://github.com/tillahoffmann/react-pages/blob/master/.github/workflows/main.yml) for details.
 
 ## Available Scripts
 
